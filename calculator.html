@@ -1,0 +1,90 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="calculator.css">
+      <script src="all2.js"></script>
+   </head>
+<form name="calculator">
+      <table>
+         <tr>
+            <td colspan= "5" ><input type="text" class="display" id="result" disabled>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <input type="button" value="1" onclick="getNumber(1)"/>
+            </td>
+            <td>
+               <input type="button" value="2" onclick="getNumber(2)"/>
+            </td>
+            <td>
+               <input type="button" value="3" onclick="getNumber(3)"/>
+            </td>
+            <td>
+               <input type="button"  class="operator"  value="/" onclick="getOperand('/')"/>
+            </td>
+             <td>
+               <input type="button"  class="operator"   value="%" onclick="calcPer('%')"/>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <input type="button" value="4" onclick="getNumber(4)"/>
+            </td>
+            <td>
+                 <input type="button" value="5" onclick="getNumber(5)"/>
+            </td>
+            <td>
+               <input type="button" value="6" onclick="getNumber(6)"/>
+            </td>
+            <td>
+               <input type="button"   class="operator"  value="-" onclick="getOperand('-')"/>
+            </td>
+            <td>
+               <input type="button"   class="operator"  value="sqrt" onclick="calcsqrt('sqrt')"/>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <input type="button" value="7" onclick="getNumber(7)"/>
+           </td>
+            <td>
+               <input type="button" value="8" onclick="getNumber(8)"/>
+            </td>
+            <td>
+               <input type="button" value="9" onclick="getNumber(9)"/>
+            </td>
+            <td>
+               <input type="button"  class="operator"   value="+" onclick="getOperand('+')"/>
+            </td>
+            <td>
+               <input type="button"    class="operator"  value="abs" onclick="calcabs('abs')"/>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <input type="button"   class="operator"    value="." onclick="getOperand('.')"/>
+            </td>
+            <td>
+                <input type="button" value="0" onclick="getNumber(0)"/>
+            </td>
+            <td>
+                <input type="button"  value="=" onclick="sol()"/>
+            </td>
+            <td>
+               <input type="button"  class="operator"  value="*" onclick="getOperand('*')"/>
+            </td>
+            <td>
+               <input type="button" id="clear" value="c" onclick="clear1()"/>
+            </td>
+
+
+
+
+
+
+
+         </tr>
+      </table>
+</form>
+   </body>
+    </html> 
