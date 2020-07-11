@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ASSIGNMENT</title>
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+table,td{
+  
+  border-collapse: collapse;
+  border-radius:10px;
+}
+
+td {
+  
+  text-align: center;
+  padding:10px;
+
+} 
+.frm{
+padding-top:20px;
+
+}
+
+</style>
+</head>       
+<body> 
+<script src="all2.js"></script>
+
+<h2><center>VALIDATION FORM</center></h2>  
+
+<div class="frm">
+
+<form name="form" method="post" id="form" onsubmit="return validation()">
+<table cellspacing:2 cellpadding:2>
+
+<tr>
+<td><b>Name:</b></td>
+<td><input type="text" name="name" id="name" length=40 maxlength=30 required></td>  
+</tr>
+
+<tr>
+<td><b>E-mail:</b></td>
+<td><input type="email" name="email"  id="email" length=40 maxlenght=30 required></td>
+</tr>
+
+<tr>
+<td><b>Phone No:</b></td>
+<td><input type="text" name="phone" id="phone" length=10 required></td>
+</tr>
+
+<tr>
+<td><button type="submit" value="Submit" name="sub">Submit</button></td> 
+</tr>
+
+</table>
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

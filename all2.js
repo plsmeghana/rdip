@@ -93,3 +93,25 @@ function calcabs() {
     document.getElementById("result").value = ans;
     return ans;
 }
+function validation() {
+    var name = document.forms["form"]["name"];
+    var l = /^[^0-9][A-Za-z]+$/;
+    var patt = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var p = /^\d{10}$/;
+    if ((document.getElementById('phone').value).match(p)) {
+        return true;
+    } else {
+        alert("enter valid mobile number");
+       
+    }
+    if ((name.value).match(l)) {
+        return true;
+    } else {
+        alert("enter valid name");
+    }
+    if ((document.getElementById('email').value).match(patt)) {
+        return true;
+    } else {
+        alert("enter valid email");
+    }
+}
