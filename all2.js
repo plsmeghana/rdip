@@ -115,3 +115,34 @@ function validation() {
         alert("enter valid email");
     }
 }
+function palindrome() {
+    var str = document.getElementById("n").value;
+    var s = "";
+    for (i = str.length - 1; i >= 0; i--) {
+        s = s + str[i];
+    }
+    if (str == s) {
+        document.write(str + " " + " is a palindrome");
+        return str + "palindrome";
+    } else {
+        document.write(str + " " + " is not a palindrome");
+        return str + "not palindome";
+    }
+}
+function anagram() {
+    var str1 = document.getElementById("m").value;
+    var str2 = document.getElementById("s").value;
+    if (str1.length !== str2.length) {
+        return false;
+    }
+    var str1Char = str1.split('').sort();
+    var str2Char = str2.split('').sort();
+    str1Char.forEach(function(_curChar, index) {
+        if (str2Char[index] !== _curChar) {
+            document.write("not anagram");
+            return false;
+        }
+    })
+    document.write("anagram");
+    return true;
+}
