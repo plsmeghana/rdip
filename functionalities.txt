@@ -1,0 +1,16 @@
+The important functionalities that I observed was:
+->Click on the Experiment tab.
+->There a dropdown list is available to select language;
+->The list contains 2 languages English and Hindi.
+->When we select the language, a set of jumbled words appeared of the selected languages.
+->Thoes are clickable buttons pertaining to each word in the sentence.
+->So when we click on any word that word gets removed from the the jumbled sentence.
+->There appear a message "Formed sentence" along with the word we selected.
+->As we keep clicking the words, the words keep getting added to the previously chosen words in the same order
+    and keep vanishing from the original jumbled sentence.
+->And we observe the "Re-Form the sentence" button ,It returns to the jumbled sentence at any moment.
+->After all the words in the jumbled sentence is empty,another button "check the correctness of the sentence”
+    is visible ,which tells whether the arranged sentence is correct.
+->If the answer is correct it gets "Right answer!!!" otherwise "Wrong answer!!!".
+->If the answer is wrong the another button "Get Correct Sentence" is available ,which gives all possible correct
+     answers.And hide button also available to hide the answers.    
